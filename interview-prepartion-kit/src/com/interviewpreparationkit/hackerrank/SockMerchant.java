@@ -24,6 +24,7 @@ public class SockMerchant {
 	}
 
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int[] ar = new int[n];
@@ -34,6 +35,9 @@ public class SockMerchant {
 
 		int result = sockMerchantValidPair(n, ar);
 		System.out.println(result);
+		long endTime = System.nanoTime();
+		long totalTime = endTime - startTime;
+		System.out.println((double)totalTime/1000000000 + " seconds");
 	}
 
 }
