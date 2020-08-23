@@ -38,6 +38,7 @@ public class SockMerchant {
 		long endTime = System.nanoTime();
 		long totalTime = endTime - startTime;
 		System.out.println((double)totalTime/1000000000 + " seconds");
+		System.out.println("Test");
 	}
 
 }
